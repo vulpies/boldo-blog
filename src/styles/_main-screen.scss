@@ -1,0 +1,382 @@
+.nav {
+    margin-top: 56px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 45px;
+        img {
+            width: 26px;
+            height: 33px;
+            margin-right: 11px;
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 43.25px;
+            line-height: 34px;
+            color: $add-text-color;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 40px;
+            font-weight: 600;
+            line-height: 28px;
+            color: $add-text-color;
+        }
+    }
+
+    &__login {
+        padding: 8px 40px;
+        color: $add-text-color;
+        border-color: $add-text-color;
+        border-radius: 24px;
+
+        &:hover {
+            background-color: #e5fff2;
+        }
+    }
+}
+
+.header {
+    text-align: center;
+    padding: 27.5px 0;
+    margin-bottom: 40px;
+
+    h6 {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 32px;
+        color: $add-text-color;
+    }
+    h1 {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 84px;
+        color: $add-text-color;
+    }
+}
+
+.article {
+    margin-top: 40px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__image {
+        width: 550px;
+        height: 386px;
+        border-radius: 24px;
+        margin-right: 100px;
+    }
+
+    &__news {
+        h6 {
+            display: inline;
+            font-weight: 700;
+            line-height: 28px;
+            color: $add-text-color;
+        }
+        & > p {
+            display: inline;
+            line-height: 28px;
+            margin-left: 12px;
+            color: $grey-text-color;
+        }
+
+        h3 {
+            margin-top: 12px;
+            margin-bottom: 20px;
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+            color: $main-text-color;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+    }
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid $add-text-color;
+}
+
+.news {
+    margin: 96px 0 124px;
+
+    & .hidden {
+        display: none;
+    }
+
+    & > .container-lg {
+        max-width: 1000px;
+
+        h4 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+            color: $main-text-color;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 209px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__single {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            margin-top: 12px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 32px;
+            color: $main-text-color;
+            height: 100px;
+            overflow-y: hidden;
+        }
+    }
+
+    &__title {
+        h6 {
+            display: inline;
+            font-weight: 700;
+            color: $add-text-color;
+            margin-right: 12px;
+        }
+
+        p {
+            color: $grey-text-color;
+            display: inline;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+        p {
+            color: $main-text-color;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        button {
+            padding: 16px 56px;
+            border-color: $add-text-color;
+
+            &:hover {
+                background-color: #e5fff2;
+            }
+        }
+    }
+}
+
+.template {
+    margin-bottom: 84px;
+    padding: 72px 0;
+    background-color: $add-text-color;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: url("../../dist/img/temp_extra.png");
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    h2 {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        max-width: 716px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__handle {
+        display: flex;
+        justify-content: center;
+
+        input {
+            border-radius: 240px;
+            width: 370px;
+            margin-right: 24px;
+            border: 2px solid #ffffff;
+            background-color: #ffffff;
+            padding: 12px 32px;
+            color: $main-text-color;
+            font-size: 20px;
+            line-height: 32px;
+
+            &::placeholder {
+                color: $main-text-color;
+                font-size: 20px;
+            }
+
+            &:focus,
+            &:active {
+                outline-color: #08ba5e;
+                border-color: #08ba5e;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 16px 56px;
+        color: $add-text-color;
+        background-color: $green-btn-color;
+        border-color: $green-btn-color;
+        font-weight: 700;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #0e8c4b;
+            color: #fff;
+        }
+    }
+}
+
+.footer {
+    padding: 100px 0 117px;
+    color: $grey-text-color;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__summary {
+        margin-right: 179px;
+        h3 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 43.25px;
+            line-height: 34px;
+            color: $add-text-color;
+            position: relative;
+            margin-bottom: 40px;
+
+            &::before {
+                content: "";
+                background-image: url("../../dist/img/Logo.png");
+                width: 25px;
+                height: 33px;
+                display: inline-block;
+                margin-right: 11px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        h4 {
+            width: 300px;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        ul {
+            &:first-child {
+                margin-right: 150px;
+            }
+
+            &:nth-child(2) {
+                margin-right: 96px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            li {
+                padding-bottom: 32px;
+                font-size: 20px;
+                line-height: 32px;
+
+                &:first-child {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: $main-text-color;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.marks {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 28px;
+    color: $add-text-color;
+    background-color: $green-btn-color;
+    border-radius: 120px;
+    padding: 6px 14px;
+    margin-left: 12px;
+    vertical-align: middle;
+}

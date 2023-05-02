@@ -1,0 +1,227 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav {
+        align-items: flex-start;
+        margin-top: 45px;
+        &__logo {
+            h3 {
+                font-size: 37px;
+            }
+            img {
+                width: 22px;
+                height: 29px;
+            }
+        }
+        &__links {
+            li {
+                font-size: 22px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+        }
+        &__login {
+            font-size: 19px;
+            padding: 5px 32px;
+        }
+    }
+
+    .header {
+        margin-bottom: 25px;
+        h1 {
+            font-size: 55px;
+            line-height: 65px;
+        }
+        h6 {
+            margin-bottom: 5px;
+        }
+    }
+
+    .article {
+        margin-top: 25px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__image {
+            width: 500px;
+            height: 340px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &__news {
+            text-align: center;
+            h3 {
+                margin-top: 17px;
+                font-size: 49px;
+                line-height: 59px;
+                max-width: 700px;
+            }
+            h6,
+            p {
+                font-size: 18px;
+            }
+        }
+
+        &__author {
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+
+            img {
+                margin-left: 13px;
+                margin-right: 0;
+                width: 40px;
+                height: 40px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .news {
+        margin: 40px 0 100px;
+
+        & .container-lg {
+            h4 {
+                font-size: 41px;
+                line-height: 52px;
+                margin-bottom: 51px;
+            }
+        }
+
+        &__img {
+            width: 324px;
+            height: 191px;
+            margin-bottom: 17px;
+        }
+
+        &__single {
+            margin-bottom: 68px;
+            h3 {
+                height: 93px;
+                margin-top: 9px;
+                margin-bottom: 16px;
+                font-size: 20px;
+                line-height: 28px;
+                max-width: 325px;
+            }
+        }
+
+        &__title {
+            h6 {
+                font-size: 18px;
+            }
+        }
+
+        &__btn {
+            button {
+                font-size: 21px;
+                padding: 15px 51px;
+                margin-top: -18px;
+            }
+        }
+    }
+
+    .template {
+        margin-bottom: 50px;
+        padding: 38px 28px 58px;
+
+        &::after {
+            top: -70px;
+            right: -6px;
+        }
+
+        h2 {
+            font-size: 44px;
+            line-height: 57px;
+            margin-bottom: 37px;
+        }
+
+        &__handle {
+            input {
+                font-size: 25px;
+                padding: 10px 20px;
+                width: 380px;
+                margin-right: 18px;
+
+                &:placeholder {
+                    font-size: 17px;
+                }
+            }
+        }
+        &__btn {
+            font-size: 22px;
+            padding: 16px 48px;
+        }
+    }
+
+    .footer {
+        padding: 47px 0 55px;
+
+        p {
+            text-align: center;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        &__summary {
+            display: flex;
+            margin-right: 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 40px;
+
+            h3 {
+                margin-bottom: 0;
+                margin-right: 42px;
+                font-size: 37px;
+                &::before {
+                    width: 21px;
+                    height: 27px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &__links {
+            ul {
+                &:first-child {
+                    margin-right: 75px;
+                }
+                &:nth-child(2) {
+                    margin-right: 34px;
+
+                    li {
+                        &:nth-child(3) {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                li {
+                    padding-bottom: 16px;
+                    font-size: 19px;
+                    line-height: 19px;
+
+                    &:first-child {
+                        font-size: 21px;
+                        line-height: 19px;
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .marks {
+        padding: 0px 10px;
+        margin-left: 11px;
+    }
+}
